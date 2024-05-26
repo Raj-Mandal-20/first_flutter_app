@@ -16,31 +16,58 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Text('First APP 😍'),
         centerTitle: true,
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.white30,
 
       ),
       body: Container(
+        height: 500,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-         children: [
+        children: [
            Container(
-              width: double.infinity,
-              height: 100,
-              child: Center(child: Text('Strawberry Pavlova', style : TextStyle(fontSize: 25))),
-              decoration: BoxDecoration(border:  Border.all(
-              width: 2,
-              color: Colors.black,
-           )),),
-           Container(
-              width: double.infinity,
-              height: 100,
-              child: Center(child: Text('Strawberry Pavlova', style : TextStyle(fontSize: 25))),
-              decoration: BoxDecoration(border:  Border.all(
-              width: 2,
-              color: Colors.black,
-           )),)
-        ],
+             padding: const EdgeInsets.all(8.0),
+             width: double.infinity,
+             height: 80,
+             decoration: BoxDecoration(
+               border: Border.all(
+                 width: 2,
+                 color: Colors.black
+               ),
+               color: Colors.blueGrey,
+             ),
+             child: Center(
+               child: Text(
+                'Strawberry Pavlova',
+                style: TextStyle(fontSize: 28)
+               ),
+             ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(30),
+             width: double.infinity,
+             decoration: BoxDecoration(
+               border: Border.all(
+                 width: 2,
+                 color: Colors.black
+               ),
+               color: Colors.blueGrey,
+             ),
+             child: Center(
+               child: Text(
+                'Pavlova is meringue based dessert named after the Russian ballerine Anna Pavlova. Pavlova features a crisp, crust and soft, light inside, topped with  fruit and whipped cream.',
+                style: TextStyle(fontSize: 20)
+               ),
+             ),
+          ),
+          Container(
+            child: Row(
+              children: [
+
+              ],
             ),
-      ));
+          )
+        ],
+      ),
+    ));
   }
 }
