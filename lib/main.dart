@@ -6,7 +6,7 @@ void main() => runApp(const MaterialApp(
 ));
 
 
-/* Learning Image Widget */
+/* Learning Row and Column Widget */
 class Home extends StatelessWidget {
   const Home({super.key});
   @override
@@ -18,14 +18,14 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
 
       ),
-      body: Center(
-        child: Container(
-          width: 100,
-          height: 100,
-          child: Center(
-            child: Image.asset('assets/images/flutter.png')
-          ),
-        ),
+      body: Column(
+        children: [
+          Text('A'),
+          Text('B'),
+          Text('C'),
+          Text('D'),
+          Text('E'),
+        ],
       )
     );
   }
