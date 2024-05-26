@@ -6,8 +6,7 @@ void main() => runApp(const MaterialApp(
 ));
 
 
-/* Learning Row and Column Widget */
-/* Making a Design for Practice */
+/* Learning Scroll View */
 class Home extends StatelessWidget {
   const Home({super.key});
   @override
@@ -19,55 +18,167 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.white30,
 
       ),
-      body: Container(
-        height: 500,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-           Container(
-             padding: const EdgeInsets.all(8.0),
-             width: double.infinity,
-             height: 80,
-             decoration: BoxDecoration(
-               border: Border.all(
-                 width: 2,
-                 color: Colors.black
-               ),
-               color: Colors.blueGrey,
-             ),
-             child: Center(
-               child: Text(
-                'Strawberry Pavlova',
-                style: TextStyle(fontSize: 28)
-               ),
-             ),
+      body: Padding(
+        padding: const EdgeInsets.all(10),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right: 10),
+                        color: Colors.green,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right : 10),
+                        color: Colors.blueGrey,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right: 10),
+                        color: Colors.yellow,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right: 10),
+                        color: Colors.lightGreen,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right: 10),
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right: 10),
+                        color: Colors.blueGrey,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right: 10),
+                        color: Colors.yellow,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right: 10),
+                        color: Colors.lightGreen,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right: 10),
+                        color: Colors.red,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right: 10),
+                        color: Colors.blueGrey,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        margin: EdgeInsets.only(right: 10),
+                        color: Colors.yellow,
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.red,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.blueGrey,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.yellow,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.lightGreen,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.red,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.blueGrey,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.yellow,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.lightGreen,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.red,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.blueGrey,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.yellow,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.lightGreen,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.red,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.blueGrey,
+              ),
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.yellow,
+              ),
+            ],
           ),
-          Container(
-            padding: const EdgeInsets.all(30),
-             width: double.infinity,
-             decoration: BoxDecoration(
-               border: Border.all(
-                 width: 2,
-                 color: Colors.black
-               ),
-               color: Colors.blueGrey,
-             ),
-             child: Center(
-               child: Text(
-                'Pavlova is meringue based dessert named after the Russian ballerine Anna Pavlova. Pavlova features a crisp, crust and soft, light inside, topped with  fruit and whipped cream.',
-                style: TextStyle(fontSize: 20)
-               ),
-             ),
-          ),
-          Container(
-            child: Row(
-              children: [
-
-              ],
-            ),
-          )
-        ],
-      ),
-    ));
+        ),
+      )
+    );
   }
 }
