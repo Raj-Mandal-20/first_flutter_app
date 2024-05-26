@@ -21,7 +21,14 @@ class Home extends StatelessWidget {
           width: 200,
           height: 200,
           color: Colors.lightBlue,
-          child : const Center(child: Text('This is a Container',style: TextStyle(fontSize: 20, color: Colors.white)))
+          child : const Center(
+              child: Text(
+                  'This is a Container',
+                    style: TextStyle(
+                    fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold
+                  )
+              )
+          )
 
         ),
       )
