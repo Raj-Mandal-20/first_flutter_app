@@ -6,12 +6,7 @@ void main() => runApp(const MaterialApp(
 ));
 
 
-// three types of button that is mainly used
-/*
-* 1. Text Button
-* 2. Elevated Button
-* 3. Outlined Button
-*/
+/* Learning Image Widget */
 class Home extends StatelessWidget {
   const Home({super.key});
   @override
@@ -24,15 +19,7 @@ class Home extends StatelessWidget {
 
       ),
       body: Center(
-        child: OutlinedButton(
-          child: Text('Click here !!'),
-          onPressed: (){
-            print('Text button Pressed');
-          },
-          onLongPress: (){
-            print('Long Press Activated');
-          },
-        ),
+        child: Image.asset('assets/images/flutter.png')
       )
     );
   }
