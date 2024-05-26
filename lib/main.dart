@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
 
       ),
-      body: Column(
+      body: Row(
         children: [
           Text('A'),
           Text('B'),
