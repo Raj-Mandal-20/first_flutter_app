@@ -19,7 +19,13 @@ class Home extends StatelessWidget {
 
       ),
       body: Center(
-        child: Image.asset('assets/images/flutter.png')
+        child: Container(
+          width: 100,
+          height: 100,
+          child: Center(
+            child: Image.asset('assets/images/flutter.png')
+          ),
+        ),
       )
     );
   }
