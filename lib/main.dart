@@ -23,8 +23,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
 
       ),
-      body: Container(
-        child: TextButton(
+      body: Center(
+        child: ElevatedButton(
           child: Text('Click here !!'),
           onPressed: (){
             print('Text button Pressed');
