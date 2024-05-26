@@ -7,6 +7,7 @@ void main() => runApp(const MaterialApp(
 
 
 /* Learning Row and Column Widget */
+/* Making a Design for Practice */
 class Home extends StatelessWidget {
   const Home({super.key});
   @override
@@ -18,15 +19,28 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
 
       ),
-      body: Row(
-        children: [
-          Text('A'),
-          Text('B'),
-          Text('C'),
-          Text('D'),
-          Text('E'),
+      body: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+         children: [
+           Container(
+              width: double.infinity,
+              height: 100,
+              child: Center(child: Text('Strawberry Pavlova', style : TextStyle(fontSize: 25))),
+              decoration: BoxDecoration(border:  Border.all(
+              width: 2,
+              color: Colors.black,
+           )),),
+           Container(
+              width: double.infinity,
+              height: 100,
+              child: Center(child: Text('Strawberry Pavlova', style : TextStyle(fontSize: 25))),
+              decoration: BoxDecoration(border:  Border.all(
+              width: 2,
+              color: Colors.black,
+           )),)
         ],
-      )
-    );
+            ),
+      ));
   }
 }
