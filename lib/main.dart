@@ -5,6 +5,13 @@ void main() => runApp(const MaterialApp(
   home:  Home()
 ));
 
+
+// three types of button that is mainly used
+/*
+* 1. Text Button
+* 2. Elevated Button
+* 3. Outlined Button
+*/
 class Home extends StatelessWidget {
   const Home({super.key});
   @override
@@ -16,20 +23,15 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
 
       ),
-      body: Center(
-        child: Container(
-          width: 200,
-          height: 200,
-          color: Colors.lightBlue,
-          child : const Center(
-              child: Text(
-                  'This is a Container',
-                    style: TextStyle(
-                    fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold
-                  )
-              )
-          )
-
+      body: Container(
+        child: TextButton(
+          child: Text('Click here !!'),
+          onPressed: (){
+            print('Text button Pressed');
+          },
+          onLongPress: (){
+            print('Long Press Activated');
+          },
         ),
       )
     );
