@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
 
       ),
       body: Center(
-        child: ElevatedButton(
+        child: OutlinedButton(
           child: Text('Click here !!'),
           onPressed: (){
             print('Text button Pressed');
